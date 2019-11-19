@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                    <th># </th>
+                <th>Name </th>
+                <th>Salary</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sub of dataList">
+                    <td>{{sub?.id}}</td>
+                <td>{{sub?.employee_name}}</td>
+                <td>{{sub!.employee_salary}}</td>
+                <td>{{sub!.employee_age}}</td>
+                <td>Delete</td>
+                <td>Edit</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
